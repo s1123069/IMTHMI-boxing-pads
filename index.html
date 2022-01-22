@@ -10,12 +10,13 @@
   <a-scene embedded arjs>
 
     <a-assets>
-      <a-asset-item id="boxingpads" src="./blendermodel/boxing-pads-versie4.gltf"></a-asset-item>
+      <a-asset-item id="pads"  src="/blendermodel/boxing-pads-versie4.obj"></a-asset-item>
+      <a-asset-item id="pads-mtl"  src="/blendermodel/boxing-pads-versie4.mtl"></a-asset-item>
     </a-assets>
 
     <!-- create your content here. just a box for now -->
     <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
-    <a-entity id="js--boxingpads" class="js--menu js--interact" static gltf-model="#boxingpads" scale="2 2 2" position="0 0.5 0" rotation="0 0 0"></a-entity>
+    <a-entity obj-model="obj: #pads; mtl: #pads-mtl" scale="0.05 0.05 0.05" position="0 0 -2"></a-entity>
 
 
     <!-- define a camera which will move according to the marker position -->
