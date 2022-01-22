@@ -15,11 +15,12 @@
     </a-assets>
 
     <!-- create your content here. just a box for now -->
-    <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
-    <a-entity obj-model="obj: #pads; mtl: #pads-mtl" scale="0.05 0.05 0.05" position="0 0 -2"></a-entity>
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <!-- <a-entity obj-model="obj: #pads; mtl: #pads-mtl" scale="3 3 3" position="0 0 0" rotation="0 70 0"></a-entity> -->
 
 
     <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
+    <a-marker-camera type='pattern' url='./custom_marker/marker.png'></a-marker-camera>
   </a-scene>
 </body>
